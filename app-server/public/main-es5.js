@@ -81,7 +81,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             this.movieTitle = '';
           }
 
-          var url = 'http://localhost:3001/omdb/search?title=' + this.movieTitle;
+          var url = 'http://localhost:80/omdb/search?title=' + this.movieTitle;
           return this.http.get(url);
         }
       }]);
@@ -482,8 +482,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: HomeComponent,
       selectors: [["app-home"]],
-      decls: 7,
-      vars: 2,
+      decls: 4,
+      vars: 1,
       consts: [[1, "background"], [1, "search", 3, "ngModel", "ngModelChange"], [1, "btn", "btn-success", "search-btn", 3, "click"]],
       template: function HomeComponent_Template(rf, ctx) {
         if (rf & 1) {
@@ -508,24 +508,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, ">");
         }
 
         if (rf & 2) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.movieTitle);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.movieTitle);
         }
       },
       directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_3__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgModel"]],
